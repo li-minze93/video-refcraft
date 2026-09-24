@@ -1,0 +1,507 @@
+{
+  "schemaVersion": "1.1.0",
+  "id": "reference-motion-cards",
+  "title": "参考拆卡",
+  "skill": "video-refcraft",
+  "source": {
+    "file": "参考视频/hypit-参考视频.mp4",
+    "durationSec": 110,
+    "resolution": "1920x1440",
+    "fps": 30,
+    "analysisStatus": "draft-analysis",
+    "confidence": "high for page boundaries, medium for internal timings"
+  },
+  "visualSystem": {
+    "background": "#F8F7F2",
+    "ink": "#151515",
+    "muted": "#77736D",
+    "border": "#151515",
+    "radiusPx": 10,
+    "shadow": "0 5px 0 rgba(21,21,21,0.14)",
+    "fontFamily": "PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif",
+    "palette": {
+      "pink": "#FF8FB1",
+      "blue": "#59B8EA",
+      "yellow": "#FFD55A",
+      "purple": "#A995EF",
+      "lime": "#C7FF3E",
+      "mint": "#A8EBC7"
+    }
+  },
+  "cards": [
+    {
+      "id": "marked-title-stage",
+      "name": "高亮标题舞台",
+      "kind": "page",
+      "component": "MarkedTitleStage",
+      "variant": "hero"
+    },
+    {
+      "id": "stagger-step-row",
+      "name": "错峰步骤排",
+      "kind": "page",
+      "component": "StaggerStepRow",
+      "variant": "steps"
+    },
+    {
+      "id": "word-code-anchor",
+      "name": "词语锚点代码",
+      "kind": "page",
+      "component": "WordCodeAnchor",
+      "variant": "code"
+    },
+    {
+      "id": "center-bright-conveyor",
+      "name": "中心点亮传送带",
+      "kind": "page",
+      "component": "CenterBrightConveyor",
+      "variant": "conveyor"
+    },
+    {
+      "id": "stagger-example-row",
+      "name": "错峰案例排",
+      "kind": "page",
+      "component": "StaggerExampleRow",
+      "variant": "examples"
+    },
+    {
+      "id": "fact-stack-rise",
+      "name": "信息叠起",
+      "kind": "page",
+      "component": "FactStackRise",
+      "variant": "stack"
+    },
+    {
+      "id": "summary-sticker-pop",
+      "name": "总结贴纸弹出",
+      "kind": "page",
+      "component": "SummaryStickerPop",
+      "variant": "summary"
+    }
+  ],
+  "shots": [
+    {
+      "order": 1,
+      "cardId": "marked-title-stage",
+      "previewId": "marked-title-stage",
+      "name": "高亮标题舞台",
+      "component": "MarkedTitleStage",
+      "kind": "page",
+      "variant": "hero",
+      "time": {
+        "startSec": 0,
+        "endSec": 10,
+        "startFrame": 0,
+        "endFrame": 300
+      },
+      "title": "Hypit 神器，AI 复刻任何爆款视频",
+      "accent": "pink",
+      "events": [
+        {
+          "id": "title",
+          "atSec": 0.1,
+          "durationSec": 0.45,
+          "enter": "fade-up",
+          "fromY": 12
+        },
+        {
+          "id": "case-panel",
+          "atSec": 0.55,
+          "durationSec": 0.65,
+          "enter": "fade-scale",
+          "fromScale": 0.96
+        },
+        {
+          "id": "anchor-pill",
+          "atSec": 1.2,
+          "durationSec": 0.35,
+          "enter": "fade-up",
+          "fromY": 8
+        }
+      ],
+      "motion": {
+        "camera": "slow-push-in",
+        "scaleFrom": 1,
+        "scaleTo": 1.035
+      },
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 2,
+      "cardId": "stagger-step-row",
+      "previewId": "stagger-step-row",
+      "name": "错峰步骤排",
+      "component": "StaggerStepRow",
+      "kind": "page",
+      "variant": "steps",
+      "time": {
+        "startSec": 10,
+        "endSec": 17,
+        "startFrame": 300,
+        "endFrame": 510
+      },
+      "title": "传统复刻，改一个人就可能全部重来",
+      "accent": "yellow",
+      "cards": [
+        "拆镜头",
+        "抄字幕",
+        "找素材",
+        "重特效"
+      ],
+      "cardColors": [
+        "blue",
+        "pink",
+        "yellow",
+        "purple"
+      ],
+      "events": [
+        {
+          "id": "step-cards",
+          "atSec": 0.55,
+          "staggerSec": 0.5,
+          "count": 4,
+          "durationSec": 0.45,
+          "enter": "fade-rise",
+          "fromY": 18
+        },
+        {
+          "id": "flow-pill",
+          "atSec": 2.6,
+          "durationSec": 0.35,
+          "enter": "fade-up",
+          "fromY": 8
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 3,
+      "cardId": "stagger-step-row",
+      "previewId": "stagger-step-row-shot-03",
+      "name": "错峰步骤排",
+      "component": "StaggerStepRow",
+      "kind": "page",
+      "variant": "steps",
+      "time": {
+        "startSec": 17,
+        "endSec": 35,
+        "startFrame": 510,
+        "endFrame": 1050
+      },
+      "title": "一次性剪辑，变成五步流水线",
+      "accent": "blue",
+      "cards": [
+        "分析参考",
+        "拆成组件",
+        "按词对齐",
+        "调用模型",
+        "并行渲染"
+      ],
+      "cardColors": [
+        "blue",
+        "pink",
+        "lime",
+        "yellow",
+        "purple"
+      ],
+      "events": [
+        {
+          "id": "pipeline-cards",
+          "atSec": 0.55,
+          "staggerSec": 0.42,
+          "count": 5,
+          "durationSec": 0.42,
+          "enter": "fade-rise",
+          "fromY": 18
+        },
+        {
+          "id": "agent-pills",
+          "atSec": 2.9,
+          "durationSec": 0.35,
+          "enter": "fade-up",
+          "fromY": 8
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 4,
+      "cardId": "word-code-anchor",
+      "previewId": "word-code-anchor",
+      "name": "词语锚点代码",
+      "component": "WordCodeAnchor",
+      "kind": "page",
+      "variant": "code",
+      "time": {
+        "startSec": 35,
+        "endSec": 54,
+        "startFrame": 1050,
+        "endFrame": 1620
+      },
+      "title": "画面跟着词语走，不再死绑秒数",
+      "accent": "lime",
+      "cards": [
+        "台词变化",
+        "语音变化",
+        "长度变化"
+      ],
+      "cardColors": [
+        "blue",
+        "pink",
+        "yellow"
+      ],
+      "code": "<visual word=\"asset:phone\" effect=\"pop\" />",
+      "events": [
+        {
+          "id": "feature-cards",
+          "atSec": 0.55,
+          "staggerSec": 0.45,
+          "count": 3,
+          "durationSec": 0.45,
+          "enter": "fade-rise",
+          "fromY": 18
+        },
+        {
+          "id": "code-panel",
+          "atSec": 1.95,
+          "durationSec": 0.6,
+          "enter": "fade-up",
+          "fromY": 20
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 5,
+      "cardId": "center-bright-conveyor",
+      "previewId": "center-bright-conveyor",
+      "name": "中心点亮传送带",
+      "component": "CenterBrightConveyor",
+      "kind": "page",
+      "variant": "conveyor",
+      "time": {
+        "startSec": 54,
+        "endSec": 70,
+        "startFrame": 1620,
+        "endFrame": 2100
+      },
+      "title": "官网这段动效，正好解释视频生产线",
+      "accent": "pink",
+      "events": [
+        {
+          "id": "frame",
+          "atSec": 0.2,
+          "durationSec": 0.55,
+          "enter": "fade-scale",
+          "fromScale": 0.96
+        },
+        {
+          "id": "conveyor",
+          "atSec": 0.8,
+          "durationSec": 14.5,
+          "enter": "continuous-x-loop",
+          "speedPxPerSec": 150,
+          "focus": "center-slot"
+        },
+        {
+          "id": "content-swap",
+          "atSec": 2.4,
+          "repeatEverySec": 2.4,
+          "count": 5,
+          "enter": "crossfade-in-place"
+        }
+      ],
+      "motion": {
+        "loop": true,
+        "axis": "x",
+        "centerScale": 1.08,
+        "farBrightness": 0.62,
+        "duplicateSet": true
+      },
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 6,
+      "cardId": "stagger-example-row",
+      "previewId": "stagger-example-row",
+      "name": "错峰案例排",
+      "component": "StaggerExampleRow",
+      "kind": "page",
+      "variant": "examples",
+      "time": {
+        "startSec": 70,
+        "endSec": 85,
+        "startFrame": 2100,
+        "endFrame": 2550
+      },
+      "title": "三种公开示例，验证跨题材复用",
+      "accent": "purple",
+      "cards": [
+        "UGC 足球榜",
+        "播客切片",
+        "街头采访"
+      ],
+      "cardColors": [
+        "blue",
+        "pink",
+        "lime"
+      ],
+      "events": [
+        {
+          "id": "example-cards",
+          "atSec": 0.55,
+          "staggerSec": 0.6,
+          "count": 3,
+          "durationSec": 0.5,
+          "enter": "fade-rise",
+          "fromY": 18
+        },
+        {
+          "id": "caption-pill",
+          "atSec": 2.9,
+          "durationSec": 0.35,
+          "enter": "fade-up",
+          "fromY": 8
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 7,
+      "cardId": "fact-stack-rise",
+      "previewId": "fact-stack-rise",
+      "name": "信息叠起",
+      "component": "FactStackRise",
+      "kind": "page",
+      "variant": "stack",
+      "time": {
+        "startSec": 85,
+        "endSec": 95,
+        "startFrame": 2550,
+        "endFrame": 2850
+      },
+      "title": "11K Stars 背后，是一套可运行的工程",
+      "accent": "blue",
+      "cards": [
+        "Node.js",
+        "pnpm",
+        "TypeScript",
+        "Workflow"
+      ],
+      "cardColors": [
+        "lime",
+        "yellow",
+        "blue",
+        "pink"
+      ],
+      "events": [
+        {
+          "id": "site-shot",
+          "atSec": 0.55,
+          "durationSec": 0.6,
+          "enter": "fade-scale",
+          "fromScale": 0.96
+        },
+        {
+          "id": "stacked-specs",
+          "atSec": 0.95,
+          "staggerSec": 0.42,
+          "count": 4,
+          "durationSec": 0.4,
+          "enter": "fade-rise",
+          "fromY": 14
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    },
+    {
+      "order": 8,
+      "cardId": "summary-sticker-pop",
+      "previewId": "summary-sticker-pop",
+      "name": "总结贴纸弹出",
+      "component": "SummaryStickerPop",
+      "kind": "page",
+      "variant": "summary",
+      "time": {
+        "startSec": 95,
+        "endSec": 110,
+        "startFrame": 2850,
+        "endFrame": 3300
+      },
+      "title": "把成功结构，变成规模化生产力",
+      "accent": "mint",
+      "cards": [
+        "可编程",
+        "可复用",
+        "可批量"
+      ],
+      "cardColors": [
+        "blue",
+        "lime",
+        "purple"
+      ],
+      "events": [
+        {
+          "id": "summary-cards",
+          "atSec": 0.55,
+          "staggerSec": 0.58,
+          "count": 3,
+          "durationSec": 0.5,
+          "enter": "fade-rise",
+          "fromY": 18
+        },
+        {
+          "id": "sticker-cta",
+          "atSec": 11.2,
+          "durationSec": 0.48,
+          "enter": "pop-back",
+          "fromScale": 0.58,
+          "overshoot": 1.08
+        }
+      ],
+      "audio": {
+        "status": "unverified-mixed-track",
+        "cue": null
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "white-fade-transition",
+      "name": "白场转场",
+      "component": "WhiteFadeTransition",
+      "type": "fade-through-white",
+      "durationSec": 0.5,
+      "durationInFrames": 15,
+      "outFrames": 8,
+      "inFrames": 7,
+      "confidence": "medium",
+      "note": "页面交界处观察到白场过渡；未标记为推拉、旋转或擦除。"
+    }
+  ],
+  "audioPolicy": {
+    "status": "unverified-mixed-track",
+    "rule": "只有在独立音效被听辨或可靠分离后才创建音效卡；本参考视频暂不生成 SFX cue。"
+  }
+}
