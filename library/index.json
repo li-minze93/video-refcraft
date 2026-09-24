@@ -1,0 +1,62 @@
+{
+  "cards": [
+    {
+      "id": "marked-title-stage",
+      "name": "高亮标题舞台",
+      "component": "MarkedTitleStage",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "stagger-step-row",
+      "name": "错峰步骤排",
+      "component": "StaggerStepRow",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "word-code-anchor",
+      "name": "词语锚点代码",
+      "component": "WordCodeAnchor",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "center-bright-conveyor",
+      "name": "中心点亮传送带",
+      "component": "CenterBrightConveyor",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "stagger-example-row",
+      "name": "错峰案例排",
+      "component": "StaggerExampleRow",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "fact-stack-rise",
+      "name": "信息叠起",
+      "component": "FactStackRise",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    },
+    {
+      "id": "summary-sticker-pop",
+      "name": "总结贴纸弹出",
+      "component": "SummaryStickerPop",
+      "file": "library/cards/motion-cards.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "white-fade-transition",
+      "name": "白场转场",
+      "component": "WhiteFadeTransition",
+      "file": "library/cards/white-fade-transition.tsx",
+      "source": "library/sources/hypit-douyin-65/reference.cards.json"
+    }
+  ]
+}
