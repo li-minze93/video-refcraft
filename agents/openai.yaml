@@ -1,0 +1,4 @@
+interface:
+  display_name: "参考拆卡"
+  short_description: "看一条参考视频，拆成以后能调用的动效、转场和声音卡"
+  default_prompt: "Use $video-refcraft to turn this reference video into reusable motion, transition, and sound cards."
